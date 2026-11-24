@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TugasKu - Catatan Tugas Sekolah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="kontainer">
+    <header>
+      <h1>📚 TugasKu</h1>
+      <p id="info-sisa">0 tugas belum selesai</p>
+    </header>
+
+    <section class="form-tugas">
+      <input type="text" id="nama-tugas" placeholder="Apa tugasnya?">
+      <input type="text" id="nama-mapel" placeholder="Mata pelajaran">
+      <input type="date" id="tanggal-tenggat">
+      <select id="pilih-prioritas">
+        <option value="rendah">Prioritas rendah</option>
+        <option value="sedang">Prioritas sedang</option>
+        <option value="tinggi">Prioritas tinggi</option>
+      </select>
+      <button id="tombol-tambah">+ Tambah</button>
+    </section>
+
+    <input type="search" id="kolom-cari" placeholder="Cari tugas...">
+
+    <section class="filter">
+      <button data-filter="semua">Semua</button>
+      <button data-filter="belum">Belum selesai</button>
+      <button data-filter="selesai">Selesai</button>
+    </section>
+
+    <ul id="daftar-tugas"></ul>
+
+    <button id="tombol-bersihkan">Hapus semua yang selesai</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
