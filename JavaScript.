@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eef2ff;
+  margin: 0;
+  padding: 16px;
+}
+
+.kontainer {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.form-tugas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.form-tugas input,
+.form-tugas select {
+  flex: 1 1 140px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#kolom-cari {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.filter {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+#daftar-tugas {
+  list-style: none;
+  padding: 0;
+}
+
+#daftar-tugas li {
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #f5f5f5;
+  border-left: 5px solid gray;
+  border-radius: 6px;
+}
+
+#daftar-tugas li.selesai {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+#daftar-tugas li.tinggi { border-left-color: red; }
+#daftar-tugas li.sedang { border-left-color: orange; }
+#daftar-tugas li.rendah { border-left-color: green; }
+
+@media (max-width: 480px) {
+  .kontainer {
+    padding: 12px;
+  }
+  .filter {
+    flex-direction: column;
+  }
+}
